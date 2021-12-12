@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+	color:  #2D2D2D
+}
+
+.header {
+  background-color: #BABABA;
+	font-size: 25px;
+  color: #2D2D2D;
+  padding: 15px;
+}
+
+
+.text  {
+  padding: 8px;
+  margin: 8px;
+  background-color: #BABABA;
+  color: #2D2D2D;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #FE555A;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 380px;}
+.col-2 {width: 58.33%;}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+	
+  <h1>BANKSY @ NU?</h1>
+</div>
+
+<div class="row">
+  <div class="col-1  footer">
+	 <img src="bansky_image.jpg.jpg" alt="Is this a Banksy?" width="360" height="270" class="menu">
+	  
+	 
+
+	  </div>
+
+  <div class="col-2 text">
+    <h1>Is this a Banksy?</h1>
+    <p>Banksy’s style mostly consists of street art, spray painted over pre-cut stencils. It heavily uses blacks, and colors on occasion to give it a visual pop. In his works, there are usually very little words, unless necessary to the message. A commonality within all of his works is the feature of charged topics, including refugees, terrorists, environmental destruction, and many other political issues. The effect of this is the widespread discussion that each of his work incites, thus making this one of the most archetypal aspects of his work.
+	  </p>
+	  <p>
+This painting above is not a Banksy original. Visually, this seems like it could be. It features black in abundance and seems to be spray painted over a stencil. It has a slight touch of color in the red spray paint that the boy is holding, as well as the red arrow to the left of him. Stylistically, this contains more fine detail than a typical Banksy black-and-white stencil. It looks very similar to Banksy’s “Girl With Balloon” which features a young girl painted in black and white letting go of a red balloon. Most importantly, this artwork lacks the deeper message contained in most Banksy works. It doesn’t have the sharp point or political charge that his other paintings have, therefore I would guess that this is not an original Banksy.
+</p>
+  </div>
+
+  
+</div>
+
+<div class="footer">
+  <p>Resize the window to see phone vs. desktop layout</p>
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,313 @@
+#container{
+  width: 800px;
+	height: 200px;
+  position: relative;
+  margin: auto;
+  top: 100px;
+	background-color:#FFFFFF;
+}
+#container2{
+  width: 1500px;
+  position: relative;
+  margin: auto;
+  margin-top: 100;
+	background-color:#FFFFFF;
+}
+#container3{
+  width: 1500px;
+  position: relative;
+	margin:auto;
+  margin-bottom: 100;
+   padding: 20px;
+
+	background-color:#FFFFFF;
+}
+
+a{
+  text-decoration: none;
+}
+
+#title{
+	position: relative;
+		margin:auto;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  margin: 20px;
+  background-color: #FFFFFF;
+	width: 300px;
+}
+
+#text{
+		position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+	margin:20px;
+	background-color: #FFFFFF;
+
+}
+
+
+#letter-g-big{
+  position: relative;
+  left: 0px;
+  width: 200px;
+  height: 200px;
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+	
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+	}}
+
+#letter-g-big:hover{
+	animation-play-state: running;
+}
+
+
+
+
+
+#letter-o{
+  position: relative;
+  left: 200px;
+  width: 400px;
+	bottom: 150px;
+  display: inline-block;}
+
+#oo1{
+  position: absolute;
+	top: 0px;
+  left: 0px;
+	z-index: 2;
+	opacity: 1; 
+   transition-property: opacity;
+	transition-duration: 1000ms;
+	}
+#oo2{
+  position: absolute;
+  left: 0px;
+  z-index: 3;
+	opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1000ms;
+  
+}
+
+#oo2:hover{
+	opacity: 1;
+}
+
+#letter-g-small{
+  position: relative;
+  left: 0px;
+  width: 100px;
+	bottom: 150px;
+  display: inline-block;
+}
+#broom{
+  position: absolute;
+  left: -20px;
+  width: 150px;
+	top: 0px;
+	bottom: 0px;
+  display: inline-block;
+}
+#windlines{
+  position: absolute;
+  left: 50px;
+  width: 50px;
+	top: 0px;
+	z-index: 1;
+	bottom: 0px;
+  display: inline-block;
+	opacity: 0;
+}
+#broom:hover~#windlines{
+	opacity: 1;
+}
+#windwhite{
+	
+	width:50px ;
+  position: relative;
+  left: 49px;
+	z-index: 2;
+  	top: 0px;
+	bottom: 0px;
+  display: inline-block; 
+	animation-name: move;
+  animation-duration: 400ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+@keyframes move {
+    from {
+        transform:translateY(0);
+    }
+    to {
+        transform:translateY(-10px);
+	}}
+
+#broom:hover~#windwhite{
+	animation-play-state: running;
+}
+
+#letter-l{
+  position: relative;
+  left: -10px;
+	bottom: 200px;
+	z-index: 4;
+  display: inline-block;
+}
+#wand1{
+  position: absolute;
+  left: 0px;
+  width: 50px;
+	top: -14px;
+  display: inline-block;
+		transition-property: opacity;
+  	transition-duration: 1000ms;
+z-index: 5;
+}
+#wand2{
+  	position: absolute;
+  	left: 2px;
+  	top: -15px;
+ 	display: inline-block;
+	z-index: 6;
+	opacity: 0;
+	transition-property: opacity;
+  	transition-duration: 1000ms;
+}
+
+#wand2:hover{
+	opacity: 1;
+}#star1{
+  position: relative;
+opacity: 0;
+  animation-name: star;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+	
+}
+@keyframes star {
+    0% {
+        transform:rotate(-10deg);
+    }
+    50% {
+        transform:rotate(40deg);
+	}100% {transform:rotate(-10deg);
+    }}
+
+#wand2:hover~#star1{
+	animation-play-state: running;
+	opacity: 1;
+}#star2{
+  position: relative;
+	left: 10px ;
+	bottom: 10px;
+opacity: 0;
+  animation-name: startwo;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+	
+}
+@keyframes startwo {
+    0% {
+        transform:rotate(-10deg);
+    }
+    50% {
+        transform:rotate(40deg);
+	}100% {transform:rotate(-10deg);
+    }}
+
+#wand2:hover~#star2{
+	animation-play-state: running;
+	opacity: 1;
+}
+#fire1{
+  position: relative;
+	left: -15px ;
+	bottom: 30px;
+opacity: 0;
+  animation-name: fireone;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+	
+}
+@keyframes fireone {
+    0% {
+        transform:rotate(-10deg);
+    }
+    50% {
+        transform:rotate(40deg);
+	}100% {transform:rotate(-10deg);
+    }}
+
+#wand2:hover~#fire1{
+	animation-play-state: running;
+	opacity: 1;}
+
+#fire2{
+  position: relative;
+	left: -80px ;
+	bottom: 30px;
+opacity: 0;
+  animation-name: firetwo;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+	
+}
+@keyframes firetwo {
+    0% {
+        transform:rotate(170deg);
+    }
+    50% {
+        transform:rotate(220deg);
+	}100% {transform:rotate(170deg);
+    }}
+
+#wand2:hover~#fire2{
+	animation-play-state: running;
+	opacity: 1;}
+
+#letter-e{
+  position: relative;
+  left: 0px;
+	z-index: 1;
+  display: inline-block;
+}
+#hat1{
+	position: absolute;
+	left: -170px;
+	bottom: 30px;
+
+	
+}
+#hat2{
+	position: absolute;
+	left: -172px;
+	bottom: 30px;
+	opacity: 0;
+	transition-property: opacity;
+  	transition-duration: 500ms;
+}
+#hat2:hover{
+	opacity: 1;}

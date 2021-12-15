@@ -1,0 +1,47 @@
+#spinnywind{
+  position: absolute;
+  left: 100px;
+	top: 800;
+  z-index: 3;
+animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+	
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+	}}
+
+#broom:hover ~ #spinnywind{
+	animation-play-state: running;
+}#spinnywind2{
+  position: absolute;
+  left: 50px;
+	top: 800;
+  z-index: 3;
+animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+	
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+	}}
+
+#broom:hover ~ #spinnywind2{
+	animation-play-state: running;
+}
